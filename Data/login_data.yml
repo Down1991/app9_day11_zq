@@ -1,0 +1,49 @@
+test_login_001:
+  username: "18117488378"
+  passwd: "Zq19910803"
+  expect_data: "我的收藏"
+
+test_login_002:
+  username: " 18117488378"
+  passwd: "Zq19910803"
+  expect_data: "我的收藏"
+#
+test_login_003:
+  username: "18117488378 "
+  passwd: "Zq19910803"
+  expect_data: "我的收藏"
+
+test_login_009:
+  username: "CY0802"
+  passwd: "Zq19910803"
+  expect_data: "我的收藏"
+#
+test_login_005:
+  username: "18800001111"
+  passwd: "159357li"
+  toast: "不存在"
+  expect_data: "此用户不存在"
+
+test_login_013:
+  username: "mlili"
+  passwd: "15935"
+  toast: "密码错误"
+  expect_data: "登录密码错误"
+
+test_login_014:
+  username: "mlili"
+  passwd: "15931593159315931"
+  toast: "密码错误"
+  expect_data: "登录密码错误"
+
+test_login_015:
+  username: "mlili"
+  passwd: "1593159"
+  toast: "密码错误"
+  expect_data: "登录密码错误"
+
+test_login_016:
+  username: "selenium"
+  passwd: "1593159"
+  toast: "不存在"
+  expect_data: "此用户不存在"
